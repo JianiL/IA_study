@@ -12,6 +12,6 @@ gtex.bysample = expdata %>%
 	left_join(samples)
 
 
-arhgef17 = gtex.bysample %>% filter(Description=='RUNX3')
+arhgef17 = gtex.bysample %>% filter(Description=='ARHGEF17')
 arhgef17 %>%
 	ggplot(aes(x=primary.tissue, y=expression)) + geom_boxplot()
